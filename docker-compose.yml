@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  backend-test:
+    build:
+      context: '.'
+      args:
+        uid: ${UID}
+    container_name: backend-test
+    networks:
+      - web
+      - internal
+    restart: always
+
+networks:
+  web:
+    external: true
+  internal:
+    external: false

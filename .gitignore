@@ -1,5 +1,5 @@
 coverage
 vendor
-
+.php_cs.cache
 phpunit.xml
 composer.lock
